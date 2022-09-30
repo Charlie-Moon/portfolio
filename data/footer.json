@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Contact us",
+    "description": "We are committed to processing the information in order to contact you and talk about your project.",
+    "contact": [
+      {
+        "email": "example@gmail.com",
+        "address": "53 Rick Ct, Noble Park, VIC 3173 Melbourne",
+        "phone": "+61 123 777 5401"
+      }
+    ],
+    "siteName": "Viseth",
+    "SiteDescription": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
+    "menu1": [
+      {
+        "name": "EXPLORE",
+        "url": "#"
+      },
+      {
+        "name": "SUPPORTS",
+        "url": "#"
+      },
+      {
+        "name": "ABOUT US",
+        "url": "#"
+      },
+      {
+        "name": "BLOG",
+        "url": "#"
+      }
+    ],
+    "menu2": [
+      {
+        "name": "LEGAL",
+        "url": "#"
+      },
+      {
+        "name": "TERMS OF USE",
+        "url": "#"
+      },
+      {
+        "name": "PRIVACY POLICY",
+        "url": "#"
+      }
+    ],
+    "menu3": [
+      {
+        "name": "SOCIALS",
+        "url": "#"
+      },
+      {
+        "name": "TWITTER",
+        "url": "#"
+      },
+      {
+        "name": "LINKEDIN",
+        "url": "#"
+      },
+      {
+        "name": "INSTAGRAM",
+        "url": "#"
+      }
+    ]
+  }
+]
