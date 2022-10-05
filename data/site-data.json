@@ -1,0 +1,27 @@
+[
+  {
+    "siteName": "Sereyvath CHEA",
+    "Navbar": [
+      {
+        "name": "HOME",
+        "url": "/"
+      },
+      {
+        "name": "ABOUT ME",
+        "url": "/about"
+      },
+      {
+        "name": "SERVICES",
+        "url": "/services"
+      },
+      {
+        "name": "PORTFOLIO",
+        "url": "/portfolio"
+      },
+      {
+        "name": "CONTACT ME",
+        "url": "/contact"
+      }
+    ]
+  }
+]

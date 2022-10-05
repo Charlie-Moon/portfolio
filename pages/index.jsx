@@ -1,11 +1,11 @@
+import Header from "../components/header";
 import About from "../components/about-me";
 import Archivement from "../components/archivement";
 import Container from "../components/container";
-import Footer from "../components/footer";
-import Header from "../components/header";
 import Info from "../components/info";
 import Portfolio from "../components/portfolio";
-import Project from "../components/project";
+import Success from "../components/success";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
           <About />
           <Portfolio />
           <Archivement />
-          <Project />
+          <Success />
         </Container>
         <Footer />
       </main>

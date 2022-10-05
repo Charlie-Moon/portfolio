@@ -24,12 +24,13 @@ export default function Portfolio() {
               className="rounded-xl bg-yellow/[.16] px-6 py-6 pb-10 shadow-lg"
               key={`portfolio-index-${item.Id}`}
             >
-              <div className="card-img ">
+              <div className="card-img relative h-56">
                 <Image
                   src={item.ThumbnailUrl}
                   layout="fill"
                   alt={item.Title}
                   objectFit="cover"
+                  priority="false"
                 />
               </div>
               <h1 className="mt-4 text-sm text-yellow">{item.Title}</h1>

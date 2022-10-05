@@ -12,7 +12,7 @@ const dataProject = [
     text: "Global Customer",
   },
 ];
-export default function Project() {
+export default function Success() {
   return (
     <section className="site-project py-14">
       <h1 className="mb-6 text-center text-3xl font-medium leading-10">

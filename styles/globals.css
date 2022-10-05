@@ -7,7 +7,7 @@
   @apply py-5;
 }
 .site-title {
-  font-family: "Imperial Script", cursive;
+  /* font-family: "Imperial Script", cursive; */
   @apply text-5xl;
 }
 .site-wrap {
@@ -19,33 +19,9 @@
 
 /* / Header */
 
-/* Body */
-
-/* Site Info */
-.info-text * {
-  @apply mt-2;
-}
-
 /* Site About */
 
-.group-icons span {
-  @apply static !important;
-}
-.group-icons img {
-  @apply static h-auto w-14 !important;
-}
-
-.portfolio article span,
-.portfolio article img {
-  @apply static h-56 w-auto !important;
-}
-.archivement article span {
-  @apply static mx-auto h-16 w-20 !important;
-}
-.archivement article img {
-  @apply static h-16 w-20 !important;
-}
-/* form-group */
+/* form-group floating label */
 
 input:focus ~ label,
 input:not(:placeholder-shown) ~ label,

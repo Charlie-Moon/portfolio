@@ -1,13 +1,14 @@
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment } from "react";
+
 import Container from "./container";
 
 import dataFooter from "../data/footer.json";
-import { Fragment } from "react";
 
 import emailIcon from "../public/icons/mail.svg";
 import addressIcon from "../public/icons/address.svg";
 import phoneIcon from "../public/icons/phone.svg";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -29,6 +30,7 @@ export default function Footer() {
                           width="30px"
                           height="30px"
                           alt={contactItem.email}
+                          priority="false"
                         />
                         {contactItem.email}
                       </li>
@@ -39,6 +41,7 @@ export default function Footer() {
                           width="30px"
                           height="30px"
                           alt={contactItem.address}
+                          priority="false"
                         />
                         {contactItem.address}
                       </li>
@@ -49,6 +52,7 @@ export default function Footer() {
                           width="30px"
                           height="30px"
                           alt={contactItem.phone}
+                          priority="false"
                         />
                         {contactItem.phone}
                       </li>
@@ -123,7 +127,7 @@ export default function Footer() {
             </div>
             <button
               type="submit"
-              className="btn-link mt-16 inline-flex rounded-lg bg-yellow px-10 py-3"
+              className="btn-link mt-16 inline-flex rounded-lg bg-cyan px-10 py-3"
             >
               Submit
             </button>
@@ -180,7 +184,7 @@ export default function Footer() {
             ))}
         </section>
       </Container>
-      <section className="spce-box mt-20 h-14 bg-yellow"></section>
+      <section className="spce-box mt-20 h-14 bg-cyan"></section>
     </footer>
   );
 }

@@ -1,32 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Fragment } from "react";
 
-// import img //
-import profile from "../public/perfil 1.png";
+import infoData from "../data/info.json";
 
 export default function Info() {
   return (
     <section className="site-info flex py-14">
-      <div className="info-text w-1/2">
-        <h5 className="text-2xl text-yellow">Hello, I am</h5>
-        <h1 className="text-7xl font-bold">Viseth Kong</h1>
-        <h4 className="text-2xl text-yellow">UI/UX & Frontend Developer</h4>
-        <p className="text-lg">
-          I’m a top online marketer and branding expert, I started my career by
-          lauching the popular metaverse design, in just a few short years, I
-          built the brand to millions of social media followers and websites
-          visitors.
-        </p>
-        <Link href="#">
-          <a className="btn-link inline-flex rounded-lg bg-yellow px-10 py-3">
-            Learn more
-          </a>
-        </Link>
-      </div>
-
-      <div className="relative mx-auto h-96 w-1/2 max-w-sm overflow-hidden rounded-full bg-yellow">
-        <Image src={profile} layout="fill" alt="" objectFit="contain" />
-      </div>
+      {infoData &&
+        infoData.map((dataItem, index) => (
+          <Fragment key={`data-item-${index}`}>
+            <div className="info-text w-1/2">
+              <h5 className="text-2xl text-yellow">{dataItem.greet}</h5>
+              <h1 className="mt-2 text-7xl font-bold">{dataItem.name}</h1>
+              <h4 className="mt-2 text-2xl text-yellow">{dataItem.position}</h4>
+              <p className="mt-2 text-lg">{dataItem.description}</p>
+              <Link href="#">
+                <a className="btn-link mt-16 inline-flex rounded-lg bg-cyan px-10 py-3">
+                  {dataItem.btn}
+                </a>
+              </Link>
+            </div>
+            <div className="relative mx-auto h-96 w-1/2 max-w-sm overflow-hidden rounded-full bg-cyan">
+              <Image
+                src={dataItem.img}
+                layout="fill"
+                alt=""
+                objectFit="cover"
+                priority="false"
+              />
+            </div>
+          </Fragment>
+        ))}
     </section>
   );
 }

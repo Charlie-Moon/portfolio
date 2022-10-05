@@ -7,9 +7,9 @@ export default function Archivement() {
   return (
     <section className="site-portfolio py-14">
       <h5 className="text-center text-base font-medium text-yellow">
-        PORTFOLIO
+        Archivement
       </h5>
-      <h1 className="text-center text-3xl font-medium">My Portfolio</h1>
+      <h1 className="text-center text-3xl font-medium">My Archivement</h1>
       <p className="mt-7 mb-3 text-right ">
         <Link href="#">
           <a className="text-sm font-medium text-yellow">
@@ -24,12 +24,13 @@ export default function Archivement() {
               className="rounded-xl bg-yellow/[.16] px-6 py-6 pb-10 text-center shadow-lg"
               key={`archivement-index-${item.Id}`}
             >
-              <div className="card-img">
+              <div className="card-img relative mx-auto h-16 w-20">
                 <Image
                   src={item.IconUrl}
                   layout="fill"
                   alt={item.Title}
                   objectFit="cover"
+                  priority="false"
                 />
               </div>
               <h1 className="mt-8 text-xl font-medium text-yellow">

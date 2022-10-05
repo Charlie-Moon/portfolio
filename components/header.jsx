@@ -25,10 +25,10 @@ export default function Header() {
     },
   ];
   return (
-    <section className="site-header bg-yellow/[.16]">
+    <section className="site-header bg-cyan">
       <Container>
         <header className="site-wrap">
-          <h1 className="site-title">Viseth</h1>
+          <h1 className="site-title">Sereyvath CHEA</h1>
           <ul className="navbar">
             {Navbar &&
               Navbar.map((item, index) => (
