@@ -116,7 +116,7 @@ export default function Footer() {
             dataFooter.map((itemSub, index) => (
               <Fragment key={`item-sub-index-${index}`}>
                 <div className="col-span-2 pr-32">
-                  <h1 className="site-title text-yellow">{itemSub.siteName}</h1>
+                  <h1 className="text-4xl text-yellow">{itemSub.siteName}</h1>
                   <p className="site-description">{itemSub.SiteDescription}</p>
                 </div>
                 <div>
