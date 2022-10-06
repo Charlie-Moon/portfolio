@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body className="bg-brown text-white">
+        <body className="bg-black text-white">
           <Main />
           <NextScript />
         </body>
