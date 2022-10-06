@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 
+import infoProfile from "../public/profile.jpg";
+
 import infoData from "../data/info.json";
 
 export default function Info() {
@@ -23,7 +25,7 @@ export default function Info() {
             </div>
             <div className="relative mx-auto h-96 w-1/2 max-w-sm overflow-hidden rounded-full bg-cyan">
               <Image
-                src={dataItem.img}
+                src={infoProfile}
                 layout="fill"
                 alt=""
                 objectFit="cover"

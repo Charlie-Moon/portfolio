@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 
+import aboutProfile from "../public/about.jpg";
+
 import aboutData from "../data/about.json";
 
 export default function About() {
@@ -12,7 +14,7 @@ export default function About() {
           <Fragment key={`about-index-${index}`}>
             <div className="about-profile relative mr-32 h-[551px] w-5/12 overflow-hidden rounded-md">
               <Image
-                src={dataItem.AboutImg}
+                src={aboutProfile}
                 layout="fill"
                 alt="about me"
                 objectFit="cover"
@@ -30,7 +32,7 @@ export default function About() {
                       <Image
                         src={iconItem.icon}
                         layout="fill"
-                        objectFit="cover"
+                        objectFit="contain"
                         alt="exp icon"
                       />
                     </div>

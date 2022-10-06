@@ -9,6 +9,9 @@ const nextConfig = {
       "cdn-icons-png.flaticon.com",
     ],
   },
+  env: {
+    baseUrl: '/'
+  }
 };
 
 module.exports = nextConfig;
