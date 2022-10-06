@@ -4,12 +4,19 @@
     "description": "We are committed to processing the information in order to contact you and talk about your project.",
     "contact": [
       {
-        "email": "example@gmail.com",
-        "address": "53 Rick Ct, Noble Park, VIC 3173 Melbourne",
-        "phone": "+61 123 777 5401"
+        "icon": "/icons/mail.svg",
+        "name": "example@gmail.com"
+      },
+      {
+        "icon": "/icons/address.svg",
+        "name": "53 Rick Ct, Noble Park, VIC 3173 Melbourne"
+      },
+      {
+        "icon": "/icons/phone.svg",
+        "name": "+61 123 777 5401"
       }
     ],
-    "siteName": "Viseth",
+    "siteName": "Sereyvath CHEA",
     "SiteDescription": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum ",
     "menu1": [
       {

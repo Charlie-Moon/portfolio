@@ -25,36 +25,14 @@ export default function Footer() {
                     <Fragment key={`contact-index-${index}`}>
                       <li className="relative flex gap-x-5">
                         <Image
-                          src={emailIcon}
+                          src={contactItem.icon}
                           layout="fixed"
                           width="30px"
                           height="30px"
                           alt={contactItem.email}
                           priority="false"
                         />
-                        {contactItem.email}
-                      </li>
-                      <li className="relative flex gap-x-5">
-                        <Image
-                          src={addressIcon}
-                          layout="fixed"
-                          width="30px"
-                          height="30px"
-                          alt={contactItem.address}
-                          priority="false"
-                        />
-                        {contactItem.address}
-                      </li>
-                      <li className="relative flex gap-x-5">
-                        <Image
-                          src={phoneIcon}
-                          layout="fixed"
-                          width="30px"
-                          height="30px"
-                          alt={contactItem.phone}
-                          priority="false"
-                        />
-                        {contactItem.phone}
+                        {contactItem.name}
                       </li>
                     </Fragment>
                   ))}
