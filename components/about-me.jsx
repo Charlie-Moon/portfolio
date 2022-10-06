@@ -14,7 +14,8 @@ export default function About() {
           <Fragment key={`about-index-${index}`}>
             <div className="about-profile relative mr-32 h-[551px] w-5/12 overflow-hidden rounded-md">
               <Image
-                src={aboutProfile}
+                // src={aboutProfile}
+                src={dataItem.AboutImg}
                 layout="fill"
                 alt="about me"
                 objectFit="cover"
