@@ -5,7 +5,7 @@ import Data from "../data/projects.json";
 
 export default function Portfolio() {
   return (
-    <section className="site-portfolio py-14">
+    <section className="site-portfolio py-8 md:py-14">
       <h5 className="text-center text-base font-medium text-yellow">
         PORTFOLIO
       </h5>
@@ -17,7 +17,7 @@ export default function Portfolio() {
           </a>
         </Link>
       </p>
-      <div className="portfolio grid grid-cols-3 gap-x-5 gap-y-7">
+      <div className="portfolio grid gap-x-5 gap-y-7 md:grid-cols-3">
         {Data &&
           Data.map((item) => (
             <article

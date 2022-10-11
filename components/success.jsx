@@ -14,11 +14,12 @@ const dataProject = [
 ];
 export default function Success() {
   return (
-    <section className="site-project py-14">
-      <h1 className="mb-6 text-center text-3xl font-medium leading-10">
-        Completed 1200+ Projects <br /> Successfully
+    <section className="site-project py-8 md:py-14">
+      <h1 className="mb-6 text-center text-2xl font-medium leading-10 md:text-3xl">
+        Completed 1200+ <br className="md:hidden block" /> Projects{" "}
+        <br className="hidden md:block" /> Successfully
       </h1>
-      <div className="project grid grid-cols-3 gap-x-6">
+      <div className="project grid gap-x-6 gap-y-5 md:grid-cols-3">
         {dataProject &&
           dataProject.map((item, index) => (
             <article

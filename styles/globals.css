@@ -8,13 +8,13 @@
 }
 .site-title {
   /* font-family: "Imperial Script", cursive; */
-  @apply text-5xl;
+  @apply text-2xl;
 }
 .site-wrap {
   @apply flex justify-between;
 }
 .navbar {
-  @apply flex items-center gap-8;
+  @apply items-center gap-8;
 }
 
 /* / Header */

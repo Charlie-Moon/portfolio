@@ -6,15 +6,11 @@ import Container from "./container";
 
 import dataFooter from "../data/footer.json";
 
-import emailIcon from "../public/icons/mail.svg";
-import addressIcon from "../public/icons/address.svg";
-import phoneIcon from "../public/icons/phone.svg";
-
 export default function Footer() {
   return (
     <footer className="pt-20">
       <Container>
-        <section className="grid grid-cols-2 gap-x-6">
+        <section className="grid gap-y-12 gap-x-6 md:grid-cols-2">
           {dataFooter &&
             dataFooter.map((itemHead, index) => (
               <div key={`footer-index-${index}`}>
@@ -105,22 +101,24 @@ export default function Footer() {
             </div>
             <button
               type="submit"
-              className="btn-link mt-16 inline-flex rounded-lg bg-cyan px-10 py-3"
+              className="btn-link mt-10 inline-flex rounded-lg bg-cyan px-10 py-3 md:mt-16"
             >
               Submit
             </button>
           </form>
         </section>
-        <section className="mt-32 grid grid-cols-5">
+        <section className="mt-20 grid grid-cols-3 md:mt-32 md:grid-cols-5">
           {dataFooter &&
             dataFooter.map((itemSub, index) => (
               <Fragment key={`item-sub-index-${index}`}>
-                <div className="col-span-2 pr-32">
-                  <h1 className="text-4xl text-yellow">{itemSub.siteName}</h1>
+                <div className="md:pr-32 col-span-3 mb-8 md:col-span-2 md:mb-0">
+                  <h1 className=" text-yellow text-4xl">
+                    {itemSub.siteName}
+                  </h1>
                   <p className="site-description">{itemSub.SiteDescription}</p>
                 </div>
                 <div>
-                  <ul className="menu space-y-10 font-medium">
+                  <ul className="menu space-y-10 text-sm font-medium">
                     {itemSub.menu1.map((menuItem, index) => (
                       <Fragment key={`menuItem-${index}`}>
                         <li>
@@ -133,7 +131,7 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div>
-                  <ul className="menu space-y-10 font-medium">
+                  <ul className="menu space-y-10 text-sm font-medium">
                     {itemSub.menu2.map((menuItem, index) => (
                       <Fragment key={`menuItem2-${index}`}>
                         <li>
@@ -146,7 +144,7 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div>
-                  <ul className="menu space-y-10 font-medium">
+                  <ul className="menu space-y-10 text-sm font-medium">
                     {itemSub.menu3.map((menuItem, index) => (
                       <Fragment key={`menuItem3-${index}`}>
                         <li>

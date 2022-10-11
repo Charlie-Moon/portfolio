@@ -5,7 +5,7 @@ import Data from "../data/achievement.json";
 
 export default function Archivement() {
   return (
-    <section className="site-portfolio py-14">
+    <section className="site-archivement py-8 md:py-14">
       <h5 className="text-center text-base font-medium text-yellow">
         Archivement
       </h5>
@@ -17,7 +17,7 @@ export default function Archivement() {
           </a>
         </Link>
       </p>
-      <div className="archivement grid grid-cols-2 gap-x-8 gap-y-9">
+      <div className="archivement grid gap-x-8 gap-y-7 md:grid-cols-2 md:gap-y-9">
         {Data &&
           Data.map((item, index) => (
             <article
