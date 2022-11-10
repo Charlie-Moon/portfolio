@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 
 import infoProfile from "../public/profile.jpg";
-
+import infoProfile1 from "../public/profile-1.jpg";
 import infoData from "../data/info.json";
 
 export default function Info() {
@@ -31,7 +31,7 @@ export default function Info() {
             </div>
             <div className="relative mx-auto h-96 w-full max-w-sm overflow-hidden rounded-full bg-cyan md:w-1/2">
               <Image
-                src={infoProfile}
+                src={infoProfile1}
                 layout="fill"
                 alt=""
                 objectFit="cover"

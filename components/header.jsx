@@ -1,17 +1,7 @@
 import { Fragment } from "react";
-import { Popover, Menu, Transition } from "@headlessui/react";
-import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import {
-  Bars3Icon,
-  BellIcon,
-  XMarkIcon,
-  ChevronDownIcon,
-} from "@heroicons/react/24/outline";
+import { Popover, Transition } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const Navbar = [
   {
@@ -84,7 +74,7 @@ export default function Example() {
           focus
           className="absolute inset-x-0 top-0 z-10 h-screen origin-top-right transform transition md:hidden"
         >
-          <div className="divide-y-2 h-full divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="h-full divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="space-y-10 px-5 pt-5 pb-2">
               <div className="flex items-center justify-end">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
